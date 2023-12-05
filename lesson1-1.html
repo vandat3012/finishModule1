@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function pointThree(point) {
+        let count = 0;
+        let max = point[0];
+        let point3;
+        for (let i = 0; i < point.length; i++) {
+            if (max < point[i]) {
+                max = point[i];
+                count++;
+            }
+            if (count === 3) {
+                point3 = point[i];
+            }
+        }
+        return point3;
+    }
+
+</script>
+</body>
+</html>

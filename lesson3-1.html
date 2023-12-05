@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkArr(str1, str2) {
+        let result;
+        for (let i = 0; i < str2.length; i++) {
+            for (let j = 0; j < str1.length; j++) {
+                if (str2[i] === str1[j]) {
+                    result = true;
+                    break;
+                } else {
+                    result = false;
+                }
+            }
+        }
+        return result;
+    }
+    let str1 = "a"
+    let str2 = "abc"
+    let newCheck = checkArr(str1,str2);
+    alert(newCheck);
+</script>
+</body>
+</html>
